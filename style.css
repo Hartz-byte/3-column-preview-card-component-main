@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    margin: 40px 15px 40px 15px;
+    color: white;
+    font-size: 15px;
+}
+
+.sedans-section {
+    background-color: hsl(31, 77%, 52%);
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.suvs-section {
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px;
+}
+
+.luxury-section {
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Big Shoulders Display;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    margin-bottom: 20px;
+    font-family: Lexend Deca;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+button {
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+}
+
+.sedan-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan-btn:hover {
+    color: white;
+    background-color: gray;
+}
+
+.suv-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv-btn:hover {
+    color: white;
+    background-color: gray;
+}
+
+.luxury-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury-btn:hover {
+    color: white;
+    background-color: gray;
+}
+
+@media(min-width: 375px) {
+
+    #main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sedans-section, .suvs-section, .luxury-section {
+        width: 20%;
+    }
+
+    .sedans-section {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    .luxury-section {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .suv-btn, .luxury-btn {
+        margin-top: 40px;
+    }
+
+    .sedan-btn {
+        margin-top: 60px;
+    }
+
+    body {
+        margin-top: 175px;
+    }
+}
